@@ -8,3 +8,5 @@
 
 # Editor
 .vscode/
+public/
+.hugo_build.lock
