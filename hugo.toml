@@ -1,0 +1,17 @@
+baseURL = "https://rosewoodkey.com/"
+languageCode = "en-us"
+title = "Rosewood Key"
+
+enableRobotsTXT = true
+
+[params]
+  description = "Rosewood Key, LLC is a holding company for digital brands and products."
+  email = "info@rosewoodkey.com"
+  phone = "+1 305 204 9994"
+  addressLine1 = "1900 N Bayshore Drive Ste 1A-317"
+  addressLine2 = "Miami, FL 33132-3002"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

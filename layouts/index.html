@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  {{ partial "logo.html" (dict "size" 176 "class" "hero-mark") }}
+  <h1>Rosewood Key</h1>
+  <p class="hero-lede">Digital Publishing</p>
+</section>
+
+<section class="brands">
+  <h2>Our brands</h2>
+  <div class="brand-grid">
+    {{ range .Site.Data.brands }}
+    <a class="brand-card" href="{{ .url }}" target="_blank" rel="noopener">
+      <h3>{{ .name }}</h3>
+      <p class="brand-tagline">{{ .tagline }}</p>
+      <p class="brand-description">{{ .description }}</p>
+      <span class="brand-link">Visit site &rarr;</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

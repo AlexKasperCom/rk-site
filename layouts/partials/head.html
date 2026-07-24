@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Site.BaseURL }}">
+<link rel="stylesheet" href="/css/style.css">

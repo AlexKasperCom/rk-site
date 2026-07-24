@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      <a href="tel:{{ .Site.Params.phone | replaceRE "[^0-9+]" "" }}">{{ .Site.Params.phone }}</a>
+      <span class="footer-address">{{ .Site.Params.addressLine1 }}, {{ .Site.Params.addressLine2 }}</span>
+    </div>
+    <p class="footer-legal">&copy; {{ now.Format "2006" }} Rosewood Key, LLC. All rights reserved.</p>
+  </div>
+</footer>
