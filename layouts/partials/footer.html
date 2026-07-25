@@ -3,7 +3,7 @@
     <div class="footer-contact">
       <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       <a href="tel:{{ .Site.Params.phone | replaceRE "[^0-9+]" "" }}">{{ .Site.Params.phone }}</a>
-      <span class="footer-address">{{ .Site.Params.addressLine1 }}<span class="footer-address-sep">, </span><br class="footer-address-break">{{ .Site.Params.addressLine2 }}</span>
+      <span class="footer-address"><span class="footer-address-line1">{{ .Site.Params.addressLine1 }}</span><span class="footer-address-line2">{{ .Site.Params.addressLine2 }}</span></span>
     </div>
     <p class="footer-legal">&copy; {{ now.Format "2006" }} Rosewood Key, LLC. All rights reserved.</p>
   </div>
