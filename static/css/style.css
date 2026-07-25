@@ -137,6 +137,10 @@ a { color: var(--rosewood); }
   color: #5a4a34;
 }
 
+.footer-address-break {
+  display: none;
+}
+
 .footer-legal {
   margin: 0;
 }
@@ -144,4 +148,12 @@ a { color: var(--rosewood); }
 @media (max-width: 480px) {
   .hero { padding: 3.5rem 1.25rem 2rem; }
   .hero h1 { font-size: 2rem; }
+
+  .footer-address-sep {
+    display: none;
+  }
+
+  .footer-address-break {
+    display: inline;
+  }
 }
